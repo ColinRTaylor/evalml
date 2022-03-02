@@ -96,6 +96,7 @@ class XGBoostRegressor(Estimator):
         Returns:
             self
         """
+        raise ValueError("SIMULATED FAILURE XGBOOST REGRESSOR!!!")
         X, y = super()._manage_woodwork(X, y)
         X.ww.set_types(self._convert_bool_to_int(X))
         self.input_feature_names = list(X.columns)
